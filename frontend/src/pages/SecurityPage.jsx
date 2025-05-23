@@ -82,7 +82,13 @@ function SecurityPage() {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <div className="text-blue-500 text-3xl mb-4">🛡️</div>
                 <h3 className="text-xl font-semibold mb-2">Fraud Detection</h3>
-                <p className="text-gray-600">Our system automatically detects and prevents suspicious transactions.</p>
+                <p className="text-gray-600 mb-3">Our system automatically detects and prevents suspicious transactions.</p>
+                <button 
+                  onClick={() => navigate('/fraud-detection')}
+                  className="text-blue-600 text-sm hover:underline"
+                >
+                  Verify Transactions
+                </button>
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-md">

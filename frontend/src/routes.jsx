@@ -11,7 +11,7 @@ import TransactionsPage from "./pages/TransactionsPage";
 import SecurityPage from "./pages/SecurityPage";
 import LearnPage from "./pages/LearnPage";
 import AboutPage from "./pages/AboutPage";
-
+import FraudDetectionPage from "./pages/FraudDetectionPage";
 
 export const router = createBrowserRouter([
     {
@@ -58,6 +58,11 @@ export const router = createBrowserRouter([
                 errorElement: <Error />
             },
             {
+                path: '/fraud-detection',
+                element: <FraudDetectionPage />,
+                errorElement: <Error />
+            },
+            {
                 path: '/learn',
                 element: <LearnPage />,
                 errorElement: <Error />
@@ -67,7 +72,6 @@ export const router = createBrowserRouter([
                 element: <AboutPage />,
                 errorElement: <Error />
             },
-            
         ]
     },
 ])
